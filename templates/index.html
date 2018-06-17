@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/socket.io/1.3.6/socket.io.min.js"></script>
+    <script src="static/js/application.js"></script>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Play:700,400' type='text/css'>
+</head>
+<body>
+<div class="container">
+  <div class="jumbotron">
+
+    <div class="row">
+        <div class="col-md-3"><h2>RPM</h2></div>
+        <div class="col-md-3"><h2>AFR</h2></div>
+        <div class="col-md-3"><h2>Speed</h2></div>
+        <div class="col-md-3"><h2>Battery</h2></div>
+    </div>
+    <div class="row">
+        <div class="col-md-3"><h1><div id="rpm"></div></h1></div>
+        <div class="col-md-3"><h1><div id="afr"></div></h1></div>
+        <div class="col-md-3"><h1><div id="speed"></div></h1></div>
+        <div class="col-md-3"><h1><div id="battery"></div></h1></div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-3"><h2>Oil Pressure</h2></div>
+        <div class="col-md-3"><h2>Oil Temperature</h2></div>
+        <div class="col-md-3"><h2>Coolant Temperature</h2></div>
+        <div class="col-md-3"><h2>Fuel Temperature</h2></div>
+    </div>
+    <div class="row">
+        <div class="col-md-3"><h1><div id="oilPressure"></div></h1></div>
+        <div class="col-md-3"><h1><div id="oilTemperature"></div></h1></div>
+        <div class="col-md-3"><h1><div id="coolantTemperature"></div></h1></div>
+        <div class="col-md-3"><h1><div id="fuelTemp"></div></h1></div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-3"><h2>MAP</h2></div>
+        <div class="col-md-3"><h2>TPS</h2></div>
+        <div class="col-md-3"><h2>Injector PW</h2></div>
+        <div class="col-md-3"><h2>Fuel Rate</h2></div>
+
+    </div>
+    <div class="row">
+        <div class="col-md-3"><h1><div id="map"></div></h1></div>
+        <div class="col-md-3"><h1><div id="tps"></div></h1></div>
+        <div class="col-md-3"><h1><div id="injectorPW"></div></h1></div>
+        <div class="col-md-3"><h1><div id="fuelRate"></div></h1></div>
+
+    </div>
+
+    <div class="row">
+        <div class="col-md-3"><h2>Accel X</h2></div>
+        <div class="col-md-3"><h2>Accel Y</h2></div>
+        <div class="col-md-3"><h2>Accel Z</h2></div>
+        <div class="col-md-3"><h2>Fuel Usage</h2></div>
+
+    </div>
+    <div class="row">
+        <div class="col-md-3"><h1><div id="accelX"></div></h1></div>
+        <div class="col-md-3"><h1><div id="accelY"></div></h1></div>
+        <div class="col-md-3"><h1><div id="accelZ"></div></h1></div>
+        <div class="col-md-3"><h1><div id="fuelUsage"></div></h1></div>
+
+    </div>
+
+    <div class="row">
+        <div class="col-md-3"><h2>Yaw</h2></div>
+        <div class="col-md-3"><h2>Pitch</h2></div>
+        <div class="col-md-3"><h2>Roll</h2></div>
+        <div class="col-md-3"><h2>Altitude</h2></div>
+
+    </div>
+    <div class="row">
+        <div class="col-md-3"><h1><div id="yaw"></div></h1></div>
+        <div class="col-md-3"><h1><div id="roll"></div></h1></div>
+        <div class="col-md-3"><h1><div id="pitch"></div></h1></div>
+        <div class="col-md-3"><h1><div id="altitude"></div></h1></div>
+    </div>
+    <div class="row">
+        <div class="col-md-3"><h2>Front Left</h2></div>
+        <div class="col-md-3"><h2>Front Right</h2></div>
+        <div class="col-md-3"><h2>Rear Left</h2></div>
+        <div class="col-md-3"><h2>Rear Right</h2></div>
+
+    </div>
+    <div class="row">
+        <div class="col-md-3"><h1><div id="frontLeft"></div></h1></div>
+        <div class="col-md-3"><h1><div id="frontRight"></div></h1></div>
+        <div class="col-md-3"><h1><div id="rearLeft"></div></h1></div>
+        <div class="col-md-3"><h1><div id="rearRight"></div></h1></div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-6"><h2>Latitude</h2></div>
+        <div class="col-md-6"><h2>Longitude</h2></div>
+    </div>
+    <div class="row">
+        <div class="col-md-6"><h1><div id="latitude"></div></h1></div>
+        <div class="col-md-6"><h1><div id="longitude"></div></h1></div>
+    </div>
+  </div>
+</div>
+    
+</div>
+
+
+
+</body>
+</html>
